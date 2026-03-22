@@ -1,98 +1,53 @@
-# 🏗️ CodeQuest — Unit 1 LO3 & LO4
+# CodeQuest — Le Labo de l'Inventeur
+## BTEC HND Unit 1: Programming — Java/Eclipse
 
-## Le Labo de l'Inventeur — Parcours de Rattrapage + Avancement
+Cours gamifie complet couvrant 100% du Essential Content (LO1-LO4).
 
-Ce repo contient le parcours gamifié pour les étudiants de première année HND en programmation Java.  
-**Objectif** : reprendre les bases, maîtriser LO3 (Implémentation) et LO4 (Debugging), avec comme fil rouge un projet présentable au **Salon des Inventions de Genève**.
-
----
-
-## 📁 Structure du Repo
+## Structure du repo
 
 ```
 unit1LO3LO4/
-├── phase1-rattrapage/          # Reprise des fondamentaux
-│   ├── 01-basiques-conditions/ # if/else, switch, &&, ||, opérateurs
-│   ├── 02-boucles/             # for, while, do-while
-│   ├── 03-oop-fondamentaux/    # Classes, constructeur, getter/setter, this
-│   └── 04-manipulation-data/   # String, arrays, ArrayList, CRUD
-│
-├── phase2-LO3/                 # Implémentation (P4, M3, D3)
-│   ├── 05-heritage/            # extends, super, protected, UML
-│   ├── 06-projet-sprints/      # Projet Salon en équipe, Git
-│   ├── 07-securite/            # Validation, exceptions, null safety
-│   └── 08-build-deploy/        # JAR, GitHub release
-│
-├── phase3-LO4/                 # Debugging & Standards (P5, P6, M4, D4)
-│   ├── 09-debugging/           # Breakpoints, watch, step, tracing
-│   ├── 10-standards/           # Conventions Java, Javadoc, code propre
-│   └── 11-escape-room/         # Chasse aux bugs gamifiée
-│
-├── projet-salon/               # Template projet équipe
-├── mini-jeux/                  # Mini-jeux web interactifs (JSX)
-└── docs/                       # Fiches mémo, guides enseignant
+├── docs/
+│   ├── ppt/                         ← PPT enseignant avec notes
+│   ├── memos/                       ← PDF memos etudiants (15 fiches)
+│   └── GUIDE_DEPLOIEMENT.md
+├── phase1-rattrapage/
+│   ├── 01-basiques-conditions/      ← Starter + Correction + Memo
+│   ├── 02-boucles/
+│   ├── 03-oop-fondamentaux/
+│   └── 04-manipulation-data/
+├── phase2-LO3/
+│   ├── 05-heritage/
+│   ├── 07-securite/
+│   ├── 12-fichiers/
+│   ├── 13-bdd/                      ← + setup_database.sql
+│   └── 14-swing-events/
+├── phase3-LO4/
+│   ├── 09-debugging/               ← 5 bugs caches
+│   └── 10-standards/               ← Code sale vs propre
+└── mini-jeux/                       ← Modules web JSX
 ```
 
----
+## 15 Modules (M00-M14)
 
-## 🎮 Système de Progression
+| Phase | Module | LO | Fichiers Eclipse |
+|-------|--------|-----|-----------------|
+| 0 | M00 Fondamentaux | LO1+LO2 | (theorie) |
+| 1 | M01 Conditions | LO2 | Distributeur.java |
+| 1 | M02 Boucles | LO1+LO2 | LaboStats.java |
+| 1 | M03 OOP | LO2 | Invention + Catalogue.java |
+| 1 | M04 Data | LO2 | GestionInventeurs.java |
+| 2 | M05 Heritage | LO2 | TestHeritage.java |
+| 2 | M14 Swing | LO2 | LaboGUI.java |
+| 2 | M06 Git | LO3 | (commandes terminal) |
+| 2 | M07 Securite | LO3 | CatalogueInsecure.java |
+| 2 | M08 Build | LO3 | (exercice JAR) |
+| 3 | M09 Debugging | LO4 | CatalogueBuggy.java |
+| 3 | M10 Standards | LO4 | GestionInventions_SALE.java |
+| 3 | M11 Escape Room | LO4 | (utilise M09) |
+| 3 | M12 Fichiers | LO3+ | CatalogueFichiers.java |
+| 3 | M13 BDD | LO3+ | LaboJDBC.java + SQL |
 
-| Concept | Mini-jeu web | Exercice Java | Correction |
-|---------|-------------|---------------|------------|
-| if/else/switch | ✅ Quiz interactif | ✅ Starter code | ✅ Incluse |
-| Boucles | ✅ Visualiseur | ✅ Starter code | ✅ Incluse |
-| Classes/OOP | ✅ Constructeur builder | ✅ Starter code | ✅ Incluse |
-| Héritage | ✅ Hiérarchie visuelle | ✅ Starter code | ✅ Incluse |
-| Debugging | ✅ Escape room | ✅ Code bugué | ✅ Incluse |
-| Standards | ✅ Code propre/sale | ✅ Refactoring | ✅ Incluse |
+Criteres BTEC P1-P6, M1-M4, D1-D4 tous mappes.
 
-Chaque module contient :
-- 📖 **Cours interactif** (théorie + code guidé + quiz)
-- 🎮 **Mini-jeu** (manipulation du concept sans coder)
-- 💻 **Exercice Java** (coder dans Eclipse, starter code fourni)
-- ✅ **Correction** (code complet + explications)
-- 📋 **Fiche mémo** (résumé imprimable)
-
----
-
-## 🚀 Comment utiliser
-
-### Pour l'enseignant
-1. Cloner le repo
-2. Les PPT sont dans chaque dossier de module
-3. Les corrections sont dans des fichiers séparés (ne pas distribuer aux étudiants !)
-4. Les mini-jeux JSX se déploient via le dashboard CodeQuest
-
-### Pour l'étudiant
-1. Ouvrir le cours interactif du module en cours
-2. Suivre les étapes (théorie → quiz → code guidé)
-3. Ouvrir le starter code Java dans Eclipse
-4. Coder l'exercice demandé
-5. Comparer avec la correction après avoir essayé
-
----
-
-## 🎯 Alignement BTEC
-
-| Critère | Phase | Activité |
-|---------|-------|----------|
-| **P4** — Write a program using an IDE | Phase 2 | Projet Salon + exercices |
-| **M3** — Enhance with IDE features | Phase 2 | Refactoring, autocomplete |
-| **D3** — Evaluate IDE vs no IDE | Phase 2 | Rapport comparatif |
-| **P5** — Explain debugging process | Phase 3 | Documentation debugging |
-| **P6** — Explain coding standard | Phase 3 | Guide de style équipe |
-| **M4** — Debugging for security | Phase 3 | Escape room + projet |
-| **D4** — Evaluate coding standards | Phase 3 | Réflexion individuelle |
-
----
-
-## 📌 Prérequis
-
-- **JDK 17+** (adoptium.net)
-- **Eclipse IDE** for Java Developers (ou IntelliJ IDEA)
-- **Git** (pour le projet en équipe)
-
----
-
-*CodeQuest — Le Labo de l'Inventeur*  
-*BTEC HND Unit 1: Programming*
+App web : https://github.com/mbiTati/codequest-app
